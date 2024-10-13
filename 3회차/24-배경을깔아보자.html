@@ -10,6 +10,24 @@
             height: 300px;
             padding: 20px;
             border: 20px double burlywood;
+
+            /* background-color: blue; */
+            background-clip: border-box;
+            /* 1.border 2.padding 3.content 
+            (color의 범위 설정은 clip으로 한다.)*/
+
+            background-image: url(Wkdrn.jpeg);
+            background-size: 200px 200px;
+            background-repeat: no-repeat;
+            /*사진이 작을 경우, 바둑판 격자 형식으로 사진이 반복 되는데, 
+            반복을 하고 싶지 않을때 no-repeat 사용한다*/
+
+            background-origin: content-box;
+            /*어디서 부터 시작할지 정해준다*/
+            background-position: 100px 50px;
+            /*어디에 위치하라! 정해줄 수 있다
+            1.center 2.bottom 3.left 4.left bottom(결합도 가능)...등등 
+            세부적으로 정하고 싶을때는 x축, y축 px조정하기 */
         }
     </style>
 </head>
